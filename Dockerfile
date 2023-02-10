@@ -1,14 +1,14 @@
 # Use the official Python image as the base image
-FROM python:3.8
+FROM python:3.10
 
-# Set the working directory in the container
-WORKDIR /app
+WORKDIR /code
 
-# Copy the application files into the working directory
-COPY . /app
+COPY requirements.txt /code
 
 # Install the application dependencies
-RUN pip install -r /app/requirements.txt
+RUN pip install -r /code/requirements.txt
+
+COPY . /code
 
 EXPOSE 5000
 
