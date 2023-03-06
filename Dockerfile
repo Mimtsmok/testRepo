@@ -10,7 +10,7 @@ RUN pip install -r /code/requirements.txt
 
 COPY . /code
 
-EXPOSE 5000
+EXPOSE 80
 
 # Define the entry point for the container
 CMD ["python", "app.py"]
