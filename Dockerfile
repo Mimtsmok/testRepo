@@ -13,4 +13,4 @@ COPY . /code
 EXPOSE 80
 
 # Define the entry point for the container
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
